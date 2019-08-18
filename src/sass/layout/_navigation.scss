@@ -1,0 +1,21 @@
+.nav-link-group {
+  display: flex;
+  align-items: center;
+}
+.nav-link {
+  padding: 12px 12px;
+  cursor: pointer;
+  &:hover {
+    background-color: scale-color($backgroundColor, $lightness: -10%);
+    border-radius: 25px;
+  }
+}
+.nav-link-round-hover {
+  &:hover {
+    border-radius: 50%;
+  }
+}
+
+a {
+  text-decoration: none;
+}

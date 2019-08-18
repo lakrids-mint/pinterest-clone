@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.scss";
 import logo from "./assets/Pinterest-logo.png";
 //import SearchBar from "./components/searchBar";
 
@@ -17,27 +16,36 @@ function App() {
           {/* INPUT FIELD */}
           <div className="input-container">
             <div className="material-icons search-icon">search</div>
-            <input placeholder="Search" className="--stretch" />
+            <input placeholder="Search" className="" />
           </div>
           {/* NAV */}
-          <nav className="ma">
-            <div className="btn-group">
-              <a href="#" className="btn-link">
+          <nav className="">
+            <div className="nav-link-group">
+              <a href="#" className="nav-link">
                 Home
               </a>
-              <a href="#" className="btn-link">
+              <a href="#" className="nav-link">
                 Following
               </a>
-              <a href="#" className="btn-link">
+              <a href="#" className="nav-link">
                 @User
               </a>
-              <a href="#" className="material-icons btn-link btn-icon">
+              <a
+                href="#"
+                className="material-icons nav-link nav-link-round-hover"
+              >
                 textsms
               </a>
-              <a href="#" className="material-icons btn-link btn-icon">
+              <a
+                href="#"
+                className="material-icons nav-link nav-link-round-hover"
+              >
                 notifications
               </a>
-              <a href="#" className="material-icons btn-link btn-icon">
+              <a
+                href="#"
+                className="material-icons nav-link nav-link-round-hover"
+              >
                 more_horiz
               </a>
             </div>
