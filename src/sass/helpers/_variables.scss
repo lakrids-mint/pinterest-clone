@@ -1,3 +1,8 @@
+/* A new variable should be created only when all of the following criteria are met:
+
+the value is repeated at least twice;
+the value is likely to be updated at least once;
+all occurrences of the value are tied to the variable (i.e. not by coincidence). */
 // Colours: according to styleguide no colors in names
 $pinRed: #e60023;
 $mediumGrey: #8e8e8e;
@@ -6,3 +11,18 @@ $backgroundColor: #f8f8f8;
 //not used atm
 $base-gutter-width: 0.1em;
 $screenWidth: 100vw;
+
+$breakpoints: (
+  "xsmall": (
+    max-width: 400px
+  ),
+  "small": (
+    min-width: 400px
+  ),
+  "medium": (
+    min-width: 800px
+  ),
+  "large": (
+    min-width: 1000px
+  )
+);

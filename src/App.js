@@ -4,8 +4,7 @@ import logo from "./assets/Pinterest-logo.png";
 
 function App() {
   return (
-    <div className="app">
-      {/* Header */}
+    <div className="app grid">
       <header className="header">
         <div className="header-container">
           <div className="logo-container">
@@ -30,6 +29,7 @@ function App() {
               <a href="#" className="nav-link">
                 @User
               </a>
+              <div className="vl" />
               <a
                 href="#"
                 className="material-icons nav-link nav-link-round-hover"
@@ -54,14 +54,57 @@ function App() {
       </header>
 
       <div className="container ">
-        <div className="card">f</div>
-        <div className="card">f</div>
-        <div className="card">f</div>
-        <div className="card">f</div>
-        <div className="card">f</div>
+        <div className="card-wrapper">
+          <div className="card">
+            <img src="https://placekitten.com/200/300" />
+          </div>
+        </div>
+        <div className="card-wrapper">
+          <div className="card">
+            <img src="https://placekitten.com/200/300" />
+          </div>
+        </div>
+        <div className="card-wrapper">
+          <div className="card">
+            <img src="https://placekitten.com/200/300" />
+            <div className="card-info">
+              <h1>Some title</h1>
+              <a
+                href="#"
+                className="material-icons nav-link nav-link-round-hover"
+              >
+                more_horiz
+              </a>
+            </div>
+            <div className="card-menu">
+              <div className="input-combo-field">
+                <input className="input-combo" />
+                <div className="btn">
+                  <p>Save</p>
+                </div>
+              </div>
+              <div>
+                <a href="#">
+                  <span className="material-icons">open_in_new</span>
+                  <span>linkname</span>
+                </a>
+                <a href="#" className="material-icons">
+                  share
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="card-wrapper">
+          <div className="card">
+            <img src="https://placekitten.com/200/300" />
+          </div>
+        </div>
       </div>
-      <button>+</button>
-      <button>?</button>
+      <div>
+        <button>+</button>
+        <button>?</button>
+      </div>
     </div>
   );
 }
