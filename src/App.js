@@ -76,7 +76,7 @@ function App() {
                 more_horiz
               </a>
             </div>
-            <div className="card-menu">
+            <div className="overlay">
               <div className="input-combo-field">
                 <input className="input-combo" />
                 <div className="btn">
